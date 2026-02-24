@@ -24,12 +24,23 @@ footer {
 }
 
 #footer-site-title {
-  font-family: "pangaia";
+  display: none;
+  font-family: "ppframa";
   font-size: 4.5rem;
   margin: 1.5rem 0;
 }
 
 #footer-since {
-  font-family: "pangaia";
+  font-family: "ppframa";
   font-size: 1.2rem;
+  color: var(--bg);
+}
+
+#footer-developer {
+  font-family: "ppframa";
+  color: var(--bg);
+  a {
+    color: var(--accent);
+    font-size: 1rem;
+  }
 }
