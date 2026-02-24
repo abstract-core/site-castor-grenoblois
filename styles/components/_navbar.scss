@@ -1,19 +1,11 @@
 #navbar {
   padding: 2rem;
-  > img.castor {
-    z-index: -1;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 15vw;
-    min-width: 160px;
-  }
-  > img.bg {
-    z-index: -2;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
+}
+#navbar-responsive {
+  display: flex;
+  gap: 32px;
+  > img {
+    width: calc(2rem + 6vw);
   }
 }
 #navbar-brand {
