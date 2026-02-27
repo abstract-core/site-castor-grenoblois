@@ -95,8 +95,10 @@ ul > li {
   margin-bottom: 4px;
 }
 
-  p.btn-p {
+p.btn-p {
   display: inline-block;
-  margin-top: 1rem;
   margin-right: 1rem;
+  & + p.btn-p {
+    margin-top: 1rem;
+  }
 }
