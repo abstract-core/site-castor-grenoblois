@@ -57,6 +57,10 @@ footer a {
   letter-spacing: 0.5px;
 }
 
+#container img {
+  max-width: 100% !important;
+}
+
 p > img {
   display: block;
   margin: 3rem auto 0;
@@ -70,25 +74,50 @@ h3 {
 }
 
 blockquote {
-  margin-top: 4rem;
   background-color: var(--primary);
   color: var(--bg);
   border-radius: 8px;
-  margin: 0;
+  margin: 2em 0;
   padding: 1rem 2rem;
+  a {
+    color: var(--dark);
+  }
 }
 
 @mixin button {
   background-color: var(--primary);
   color: var(--dark);
-  padding: 8px 16px;
+  padding: 12px 16px;
   text-decoration: none;
-  border-radius: 24px;
+  border-radius: 8px;
+  display: block;
+  text-align: center;
 }
 
 .btn,
 .btn-list a {
   @include button;
+}
+
+table {
+  border-collapse: collapse;
+  td,
+  th {
+    padding-inline: 8px;
+    padding: 8px 12px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:not(:first-child) {
+      border-left: 1px solid #fff;
+    }
+  }
+  th {
+    border-bottom: 1px solid #fff;
+  }
+  tr:not(:last-child) td {
+    border-bottom: 1px solid #fff8;
+  }
 }
 
 ul > li {
@@ -99,6 +128,6 @@ p.btn-p {
   display: inline-block;
   margin-right: 1rem;
   & + p.btn-p {
-    margin-top: 1rem;
+    margin-top: 0;
   }
 }

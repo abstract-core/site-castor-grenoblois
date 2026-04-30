@@ -26,6 +26,10 @@ footer {
   }
   > :last-child {
     width: 368px;
+    max-width: 100%;
+    > #footer-icon {
+      width: 100%;
+    }
   }
 }
 
