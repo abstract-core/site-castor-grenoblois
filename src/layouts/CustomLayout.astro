@@ -10,12 +10,17 @@ interface Props {
 }
 
 const {
-  data: { Name: title, Description: description, "Mots-clés": keywords },
+  data: {
+    Name: name,
+    Title: title,
+    Description: description,
+    "Mots-clés": keywords,
+  },
 } = Astro.props;
 ---
 
 <Layout
-  pageTitle={title}
+  pageTitle={title || name}
   siteTitle={SITE_TITLE}
   description={description || undefined}
   keywords={keywords || undefined}
