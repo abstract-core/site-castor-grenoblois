@@ -1,7 +1,7 @@
 {
   "name": "roro-castor",
   "type": "module",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "scripts": {
     "start": "astro dev",
     "build": "astro build",
@@ -19,7 +19,7 @@
     "astro": "^5.4.1",
     "esbuild": "^0.25.0",
     "nebula-atoms": "^2.2.17",
-    "nebula-genesis": "^2.0.16",
+    "nebula-genesis": "^2.0.17",
     "sass": "^1.83.4"
   },
   "devDependencies": {
